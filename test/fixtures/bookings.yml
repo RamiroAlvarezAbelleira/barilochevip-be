@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipo: one
+  start_date: 2023-06-24
+  end_date: 2023-06-24
+
+two:
+  equipo: two
+  start_date: 2023-06-24
+  end_date: 2023-06-24
