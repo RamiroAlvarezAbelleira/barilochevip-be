@@ -1,5 +1,5 @@
 class Api::V1::BaseController < ActionController::API
-  # include Pundit::Authorization
+  include Pundit::Authorization
   include DeviseTokenAuth::Concerns::SetUserByToken
 
   after_action :verify_authorized, except: :index
