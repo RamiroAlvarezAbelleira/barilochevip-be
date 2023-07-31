@@ -76,7 +76,7 @@ Rails.application.configure do
   config.active_support.report_deprecations = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = proc do |severity, timestamp, progname, message|
+  config.log_formatter = proc do |severity, timestamp, message|
     "[#{timestamp.strftime('%Y-%m-%d %H:%M:%S')}] #{severity} -- : #{message}\n"
   end
 
