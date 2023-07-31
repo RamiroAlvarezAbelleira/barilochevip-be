@@ -90,6 +90,11 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+  config.after_initialize do
+    Rails.application.routes.default_url_options[:host] = 'https://barilochevip-be-production.up.railway.app'
+    Rails.application.routes.default_url_options[:port] = 5837
+  end
+
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
